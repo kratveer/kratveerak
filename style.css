@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.akpati{
+    height: 2vw;
+    background: blue;
+}
+.maintopnavbar{
+    background-color: #CDDCDC;
+ background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);
+ background-blend-mode: screen, overlay;
+    
+}
+.topbar{
+    border-top: 2px solid black;
+    width: 100%;
+    height: 7vw;
+    padding: 2vw 0 2vw 0;
+}
+.topbarleft{
+    float: left;
+    padding: 0 0 0 16vw;
+    width: 7vw;
+    height: 7vw;
+}
+.topbarright{
+    padding: 1.9vw 0 0 24vw;
+    font-size: 3vw;
+    text-decoration: none;
+}
+.topbarright a{
+    font-family: 'Philosopher', sans-serif;
+    text-decoration: none;
+    color: darkred;
+    text-shadow: .3vw .3vw .6vw darkgrey;
+}
+nav{
+    height: 5vw;
+    width: 100%;
+    margin: auto;
+    opacity: .9;
+    
+}
+.nameleft{
+    font-size: 2.3vw;
+    float: left;
+    font-weight: 1000;
+    text-shadow: .1vw .1vw 2vw darkgrey;
+    text-align: center;
+    padding: .6vw 0 .6vw 40vw;
+    font-family: 'Philosopher', sans-serif;
+    color: darkred;
+    
+}
+
+
+.nameright{
+    font-size: 1.1vw;
+    float: right;
+}
+.nameright ul{
+    padding: .6vw 2vw 0 0;
+    display: flex;
+}
+.nameright ul li{
+    margin: 0 .3vw 0 .3vw;
+    list-style: none;
+    color: darkgrey;
+    
+    
+}
+.nameright ul li:last-child a{
+    color: darkred;
+    font-size: 1.6vw;
+    padding: 0 0 0 2vw;
+}
+.nameright ul li a{
+    text-align: center;
+    color: darkred;
+    text-decoration: none;
+    font-family: 'Merienda', cursive;
+}
+
+
+
+
+.navbar{
+    border-top: 1px solid black;
+    position: relative;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    height: 3.38vw;
+    
+}
+.navbar ul{
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 1vw;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li ul{
+    display: block;
+    position: absolute;
+    box-shadow: 0 2px 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+}
+.navbar ul li ul li a{
+    font-size: 1.3vw;
+    text-align: left;
+}
+.navbar ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    border-radius: 1vw;
+}
+.navbar ul li:hover ul a{
+    margin: 0 0 0 -.5vw;
+    transition: .5s;
+    
+}
+.navbar ul li a:hover{
+    color: darkred;
+    transition: .3s;
+}
+.navbar ul li a.active {
+    background: rgba(255,255,255,0.9);
+    color: darkred;
+    border-radius: .4vw;
+}
+.navbar ul li a{
+    display: block;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    padding: .88vw 1.3vw .94vw 1.3vw;
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: white;   
+    
+}
+.navbar ul li:hover{
+    border: 0px solid white;
+    border-radius: .7vw;
+    background: rgba(255,255,255,0.8);
+    transition: .5s;
+}
+
+
+
+
+.navbar ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.navbar ul li a:hover{
+    color: darkred;
+}
+.navbar ul li a.active {
+    background: rgba(255,255,255,0.9);
+    color: darkred;
+    border-radius: .4vw;
+}
+
+
+/*
+.namemiddle{
+    font-size: 1.1vw;
+    float: left;
+    width: 40%;
+    padding: 1vw 0 0 0;
+    z-index: 1;
+}
+.namemiddle ul{
+    display: flex;
+}
+.namemiddle ul li{
+    margin: 0 .3vw 0 .3vw;
+    list-style: none;
+    color: darkgrey;
+    padding: .4vw 1vw .4vw 1vw;
+    
+}
+.namemiddle ul li:last-child{
+    border-bottom: .1vw solid darkred;
+    font-size: 1.2vw;
+    color: darkred;
+}
+.namemiddle ul li:last-child a{
+    color: darkred;
+}
+.namemiddle ul li ul li:last-child a{
+    color: darkgrey;
+}
+.namemiddle ul li ul li:last-child a:hover{
+    color: darkred;
+    transition: .5s;
+}
+.namemiddle ul li:last-child ul li a{
+    color: darkgrey;
+}
+.namemiddle ul li:last-child ul li a:hover{
+    color: darkred;
+}
+
+.namemiddle ul li a{
+    text-align: center;
+    color: darkgrey;
+    text-decoration: none;
+    font-family: 'Merienda', cursive;
+}
+.namemiddle ul li ul{
+    display: block;
+    padding: 1vw 0 0 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 1;
+}
+.namemiddle ul li ul li:hover{
+    border: 0vw solid darkgrey;
+    margin: 0 0 0 -.5vw;
+    transition: .5s;
+}
+.namemiddle ul li ul li:last-child{
+    border: 0vw solid darkgrey;
+    
+}
+.namemiddle ul li:hover{
+    margin: 0 .3vw 0 .3vw;
+    border-bottom: .1vw solid darkred;
+}
+.namemiddle ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    color: darkred;
+}
+.namemiddle ul li ul a:hover{
+    color: darkred;
+    transition: .5s;
+} */
+
+
+
+
+
+.sec1{
+    height: 34vw;
+    width: 100%;
+    background: black;
+}
+.row1{
+    background: cover;
+    position: fixed;
+    float: left;
+    margin: 3vw 3.4vw 0 3.4vw;
+}
+.img1{
+    width: 30vw;
+    height: auto;
+    padding: 0;
+    
+}
+.row2left{
+    float: left;
+    width: 40%;
+    color: white;
+    opacity: .7;
+    padding: 4vw 0 0 4vw;
+    font-size: 1.2vw;
+}
+.row2left a{
+    font-size: 2.2vw;
+    text-shadow: .3vw .3vw 2vw darkgrey;   
+}
+.row2right{
+    float: right;
+    padding: 2.3vw 6vw 0 0;
+}
+.sirimg{
+    width: 38vw;
+    height: auto;
+}
+
+
+
+.sec3{
+    height: 15vw;
+    width: 100%;
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    box-shadow: inset .3vw 0 1vw black;
+}
+.sec3right{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3vw;
+    margin: auto;
+    padding: 2vw 0 2vw 0;
+    color: #1B5E20;
+}
+.sec3right a{
+    font-size: 2vw;
+    color: #1B5E20;
+    text-shadow: .2vw .2vw .6vw darkgrey;
+}
+
+
+.sec4{
+    height: 1.8vw;
+    width: 100%;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: 'Slabo 27px', serif;
+    padding: 2vw 0 2vw 0;
+    font-style: italic;
+}
+
+
+
+.content{
+    height: 20vw;
+    overflow: scroll;
+    
+    width: 93.89%;
+    background-color: #CDDCDC;
+    background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%);
+    background-blend-mode: screen, overlay;
+    padding: 3vw;
+
+    
+            box-shadow:0 1vw 6vw rgba(0, 0, 0, 0.1), 0 0 5vw rgba(0, 0, 0, 0.6) inset;
+}
+.content1 a{
+    font-size: 2vw;
+    margin-top: 2vw;
+    color:darkred;
+}
+.content1 p{
+    font-size: 1.4vw;
+}
+.content1 ul li{
+    padding: .4vw;
+    font-size: 1.2vw;
+}
+
+
+.lastfooter{
+    height: 5vw;
+    width: 100%;
+    padding: 1vw;
+    background: #111;
+    color:darkgray;
+    box-sizing: border-box;
+    
+}
+.lastfootleft{
+    float: left;
+    text-align: center;
+    width: 54%;
+    font-size: 1.1vw;
+    padding: .5vw 0 .5vw 0;
+    
+}
+.lastfootright{
+    float: right;
+    text-align: center;
+    padding: .5vw 0 .5vw 0;
+    width: 36%;
+    font-size: 1.1vw;
+}
+.lastfootright a{
+    color: darkslategrey;
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+.lastfootright a:hover{
+   color: darkgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page2{
+    width: 100%;
+    height: 80vw;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.aboutbiography{
+    font-size: 1.2vw;
+    padding: 4vw 5vw 0 5vw;
+    font-family: 'Playfair Display', serif;
+}
+.aboutawards{
+    font-size: 1.2vw;
+    padding: 2vw 5vw 0 5vw;
+    font-family: 'Playfair Display', serif;
+}
+.aboutmore{
+    font-size: 1.2vw;
+    padding: 2vw 5vw 0 5vw;
+    font-family: 'Playfair Display', serif;
+}
+.aboutmore ul li a{
+    text-decoration: none;
+    color: darkcyan;
+    
+}
+.aboutmore ul li a:hover{
+    color: darkred;
+    
+}
+
+
+.page3{
+    width: 100%;
+    height: 200vw;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Playfair Display', serif;
+}
+.contentmore, .contentmoremore{
+    padding: 4vw 5vw 0 5vw;
+    font-size: 1.2vw;
+}
+.contentmore ul li, .contentmoremore ul li{
+    padding: 1vw 1vw 0 1vw;
+}
+
+.page4{
+    width: 100%;
+    height: 88vw;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Playfair Display', serif;
+}
+.selectedpub{
+    padding: 4vw 5vw 0 5vw;
+    font-size: 1.2vw;
+}
+.selectedpub ul li{
+    padding: .2vw;
+    
+}
+.selectedpub a{
+    text-decoration: none;
+    color: brown;
+    
+}
+.selectedpub1{
+    font-size: 1.4vw;
+}
+.page5{
+    width: 100%;
+    height: 50vw;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Playfair Display', serif;
+}
+.bookspub1{
+    font-size: 1.2vw;
+    padding: 4vw 5vw 0 5vw;
+}
+.bookspub1 a{
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: darkred;
+}
+.bookspub1 a:hover{
+    color: darkcyan;
+}
+
+
+
+
+.page6{
+    width: 100%;
+    height: 80vw;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Playfair Display', serif;
+}
+.extraact1{
+    font-size: 1.2vw;
+    padding: 4vw 5vw 0 5vw;
+}
+.extraact1 ul li{
+    padding: .5vw;
+}
+.paintings1{
+    display: flex;
+    text-align: center;
+}
+.paintings1 img{
+    width: 25vw;
+    padding: 3vw 1.8vw 0 1.8vw;
+    height: auto;
+    
+}
+.paintings2{
+    display: flex;
+    text-align: center;
+}
+.paintings2 img{
+    width: 25vw;
+    padding: 3vw 7vw 0 7vw;
+    height: auto;
+    
+}
+
+
+
+.page7{
+    width: 100%;
+    height: 80vw;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Playfair Display', serif;
+}
+.newsitem1{
+    font-size: 1.2vw;
+    padding: 4vw 10vw 0 10vw;
+}
+.newsitem1 ul li{
+    padding: .5vw;
+}
+.newsitem1 ul li a{
+    text-decoration: none;
+    color: darkred;
+}
+.newsitem1 ul li a:hover{
+    color: darkcyan;
+}
+
+.page8{
+    width: 100%;
+    height: 30vw;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Playfair Display', serif;
+}
+.talksandart1{
+    font-size: 1.2vw;
+    padding: 4vw 10vw 0 10vw;
+}
+.talksandart1 ul li{
+    padding: .5vw;
+}
+.talksandart1 ul li a{
+    text-decoration: none;
+    color: darkred;
+}
+.talksandart1 ul li a:hover{
+    color: darkcyan;
+}
+
+
+.page9{
+    width: 100%;
+    height: 30vw;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Playfair Display', serif;
+}
+.conference1{
+    font-size: 1.2vw;
+    padding: 4vw 10vw 0 10vw;
+}
+.conference1 ul li{
+    padding: .5vw;
+}
+.conference1 ul li a{
+    text-decoration: none;
+    color: darkred;
+}
+.conference1 ul li a:hover{
+    color: darkcyan;
+}
+
+
+
+.page10{
+    width: 100%;
+    height: 70vw;
+    margin: auto;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Playfair Display', serif;
+}
+.group1{
+    font-size: 1.2vw;
+    padding: 4vw 10vw 0 10vw;
+}
+.group1 b{
+    font-size: 2vw;
+    text-align: center;
+}
+.group1 ul li{
+    padding: .5vw;
+    font-size: 1.2vw
+}
+.group1 ul{
+    font-size: 1.5vw;
+    
+}
+.group1 ul li a{
+    text-decoration: none;
+    color: darkred;
+}
+.group1 ul li a:hover{
+    color: darkcyan;
+}
+
+
+
